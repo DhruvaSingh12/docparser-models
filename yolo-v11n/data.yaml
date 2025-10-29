@@ -1,0 +1,13 @@
+train: F:/Projects/docparse/backend/dataset/train/images
+val: F:/Projects/docparse/backend/dataset/valid/images
+test: F:/Projects/docparse/backend/dataset/test/images
+
+nc: 8
+names: ['date_of_reciept', 'gstin', 'invoice_no', 'mobile_no', 'product_table', 'store_address', 'store_name', 'total_amount']
+
+roboflow:
+  workspace: otb-lu8tk
+  project: docparse-ewrjc
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/otb-lu8tk/docparse-ewrjc/dataset/2

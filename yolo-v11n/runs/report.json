@@ -1,0 +1,158 @@
+{
+  "model_info": {
+    "model_type": "YOLOv11n",
+    "task": "Medical Bill Detection",
+    "num_classes": 8,
+    "class_names": [
+      "date_of_reciept",
+      "gstin",
+      "invoice_no",
+      "mobile_no",
+      "product_table",
+      "store_address",
+      "store_name",
+      "total_amount"
+    ],
+    "training_date": "2025-10-28 01:29:55",
+    "best_model_path": "runs\\medical_bill_detection\\weights\\best.pt",
+    "last_model_path": "runs\\medical_bill_detection\\weights\\last.pt"
+  },
+  "training_config": {
+    "epochs": 100,
+    "image_size": 640,
+    "batch_size": 16,
+    "device": "GPU",
+    "patience": 50
+  },
+  "dataset_info": {
+    "train_images": 742,
+    "validation_images": 60,
+    "test_images": 60,
+    "total_images": 862
+  },
+  "final_training_metrics": {
+    "precision": 0.88758,
+    "recall": 0.87925,
+    "mAP50": 0.90733,
+    "mAP50-95": 0.60695,
+    "box_loss": 1.02842,
+    "class_loss": 0.70291,
+    "dfl_loss": 0.92359
+  },
+  "validation_metrics": {
+    "overall": {
+      "precision": 0.8925346114123391,
+      "recall": 0.8805569917127486,
+      "mAP50": 0.9075543323840856,
+      "mAP50-95": 0.6107152611436002
+    },
+    "per_class": {
+      "date_of_reciept": {
+        "precision": 0.938904240912566,
+        "recall": 0.8983050847457628,
+        "mAP50": 0.9621693224903017,
+        "mAP50-95": 0.6389233050807427
+      },
+      "gstin": {
+        "precision": 0.8668039097310154,
+        "recall": 0.8793103448275862,
+        "mAP50": 0.906371512660387,
+        "mAP50-95": 0.55553618267557
+      },
+      "invoice_no": {
+        "precision": 0.896635134635432,
+        "recall": 0.8983050847457628,
+        "mAP50": 0.9074206025402801,
+        "mAP50-95": 0.5588828053076452
+      },
+      "mobile_no": {
+        "precision": 0.7438810789422665,
+        "recall": 0.5333333333333333,
+        "mAP50": 0.6277653082624959,
+        "mAP50-95": 0.3806730062073561
+      },
+      "product_table": {
+        "precision": 0.9601122907352329,
+        "recall": 1.0,
+        "mAP50": 0.9859836065573768,
+        "mAP50-95": 0.8330224145677472
+      },
+      "store_address": {
+        "precision": 0.818142451898152,
+        "recall": 0.8813559322033898,
+        "mAP50": 0.9148586621264734,
+        "mAP50-95": 0.5988868140278565
+      },
+      "store_name": {
+        "precision": 0.934216993761049,
+        "recall": 0.9538461538461539,
+        "mAP50": 0.9610380582284728,
+        "mAP50-95": 0.6993773544341152
+      },
+      "total_amount": {
+        "precision": 0.9815807906829997,
+        "recall": 1.0,
+        "mAP50": 0.9948275862068966,
+        "mAP50-95": 0.6204202068477679
+      }
+    }
+  },
+  "test_metrics": {
+    "overall": {
+      "precision": 0.9022865581822387,
+      "recall": 0.8825202978841123,
+      "mAP50": 0.9216602952730497,
+      "mAP50-95": 0.6091326661603007
+    },
+    "per_class": {
+      "date_of_reciept": {
+        "precision": 0.9634142634158075,
+        "recall": 0.9655172413793104,
+        "mAP50": 0.9923967611336032,
+        "mAP50-95": 0.6477508508006575
+      },
+      "gstin": {
+        "precision": 0.8986637880533482,
+        "recall": 0.7779869499322914,
+        "mAP50": 0.8359552114842066,
+        "mAP50-95": 0.5009418124127649
+      },
+      "invoice_no": {
+        "precision": 0.9149962569058104,
+        "recall": 0.9279903142471836,
+        "mAP50": 0.9731508550226338,
+        "mAP50-95": 0.5917620125008892
+      },
+      "mobile_no": {
+        "precision": 0.7233782258259663,
+        "recall": 0.49122807017543857,
+        "mAP50": 0.6423737911745112,
+        "mAP50-95": 0.3885413294563279
+      },
+      "product_table": {
+        "precision": 0.9813410039921303,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.8119790461074352
+      },
+      "store_address": {
+        "precision": 0.8301950416349706,
+        "recall": 0.9272905536073318,
+        "mAP50": 0.95546914834478,
+        "mAP50-95": 0.6405094440162071
+      },
+      "store_name": {
+        "precision": 0.9329825124795156,
+        "recall": 0.9701492537313433,
+        "mAP50": 0.984106086550086,
+        "mAP50-95": 0.6810673509455194
+      },
+      "total_amount": {
+        "precision": 0.9733213731503606,
+        "recall": 1.0,
+        "mAP50": 0.9948305084745762,
+        "mAP50-95": 0.610509483042604
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "dataset": "Validation",
+  "total_images": 60,
+  "total_actual_labels": 477,
+  "total_predicted_labels": 480,
+  "map_50": 0.9043134735927035,
+  "detection_accuracy": 0.7988721804511278,
+  "classification_accuracy": 0.9906759906759907,
+  "macro_precision": 0.7856848217596272,
+  "macro_recall": 0.7919408116568901,
+  "macro_f1": 0.7882431533898616,
+  "per_class_metrics": {
+    "images": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "ap_50": 0.0,
+      "actual_count": 0,
+      "predicted_count": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "date_of_reciept": {
+      "precision": 0.9642857142857143,
+      "recall": 0.9152542372881356,
+      "f1_score": 0.9391304347826087,
+      "ap_50": 0.9057851239650365,
+      "actual_count": 59,
+      "predicted_count": 56,
+      "true_positives": 54,
+      "false_positives": 2,
+      "false_negatives": 5
+    },
+    "gstin": {
+      "precision": 0.8620689655172413,
+      "recall": 0.8620689655172413,
+      "f1_score": 0.8620689655172413,
+      "ap_50": 0.889734871020459,
+      "actual_count": 58,
+      "predicted_count": 58,
+      "true_positives": 50,
+      "false_positives": 8,
+      "false_negatives": 8
+    },
+    "invoice_no": {
+      "precision": 0.8928571428571429,
+      "recall": 0.847457627118644,
+      "f1_score": 0.8695652173913044,
+      "ap_50": 0.8973607038104845,
+      "actual_count": 59,
+      "predicted_count": 56,
+      "true_positives": 50,
+      "false_positives": 6,
+      "false_negatives": 9
+    },
+    "mobile_no": {
+      "precision": 0.6428571428571429,
+      "recall": 0.6,
+      "f1_score": 0.6206896551724138,
+      "ap_50": 0.6771549735210513,
+      "actual_count": 60,
+      "predicted_count": 56,
+      "true_positives": 36,
+      "false_positives": 20,
+      "false_negatives": 24
+    },
+    "product_table": {
+      "precision": 0.9516129032258065,
+      "recall": 0.9833333333333333,
+      "f1_score": 0.9672131147540983,
+      "ap_50": 0.9930069930053231,
+      "actual_count": 60,
+      "predicted_count": 62,
+      "true_positives": 59,
+      "false_positives": 3,
+      "false_negatives": 1
+    },
+    "store_address": {
+      "precision": 0.90625,
+      "recall": 0.9830508474576272,
+      "f1_score": 0.943089430894309,
+      "ap_50": 0.9700413223123274,
+      "actual_count": 59,
+      "predicted_count": 64,
+      "true_positives": 58,
+      "false_positives": 6,
+      "false_negatives": 1
+    },
+    "store_name": {
+      "precision": 0.8857142857142857,
+      "recall": 0.9538461538461539,
+      "f1_score": 0.9185185185185185,
+      "ap_50": 0.9045054652073923,
+      "actual_count": 65,
+      "predicted_count": 70,
+      "true_positives": 62,
+      "false_positives": 8,
+      "false_negatives": 3
+    },
+    "total_amount": {
+      "precision": 0.9655172413793104,
+      "recall": 0.9824561403508771,
+      "f1_score": 0.9739130434782608,
+      "ap_50": 0.9969183358995541,
+      "actual_count": 57,
+      "predicted_count": 58,
+      "true_positives": 56,
+      "false_positives": 2,
+      "false_negatives": 1
+    }
+  }
+}

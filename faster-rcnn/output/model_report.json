@@ -1,0 +1,160 @@
+{
+  "model_info": {
+    "model_type": "Faster R-CNN with ResNet-50 FPN",
+    "framework": "PyTorch TorchVision",
+    "task": "Medical Bill Detection",
+    "num_classes": 9,
+    "class_names": [
+      "images",
+      "date_of_reciept",
+      "gstin",
+      "invoice_no",
+      "mobile_no",
+      "product_table",
+      "store_address",
+      "store_name",
+      "total_amount"
+    ],
+    "training_date": "2025-10-29 01:11:17",
+    "best_model_path": "output\\best_model.pth",
+    "final_model_path": "output\\final_model.pth"
+  },
+  "training_config": {
+    "num_epochs": 25,
+    "batch_size": 4,
+    "learning_rate": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_step_size": 10,
+    "lr_gamma": 0.1,
+    "device": "cuda"
+  },
+  "dataset_info": {
+    "train_images": 742,
+    "validation_images": 60,
+    "test_images": 60,
+    "total_images": 862,
+    "train_annotations": 5904,
+    "validation_annotations": 477,
+    "test_annotations": 482
+  },
+  "training_results": {
+    "best_epoch": 24,
+    "best_loss": 0.14879407345127033,
+    "final_epoch": 25,
+    "final_loss": 0.14903658728605956
+  },
+  "validation_results": {
+    "total_images": 60,
+    "total_predictions": 673,
+    "total_ground_truth": 477,
+    "avg_predictions_per_image": 11.216666666666667
+  },
+  "test_results": {
+    "total_images": 60,
+    "total_predictions": 758,
+    "total_ground_truth": 482,
+    "avg_predictions_per_image": 12.633333333333333
+  },
+  "evaluation_metrics": {
+    "map_50": 0.8827224614648077,
+    "map_75": 0.6692196191017566,
+    "map_50_95": 0.5866944993905145,
+    "overall_accuracy": 0.8070500927643784,
+    "macro_precision": 0.7861110005857683,
+    "macro_recall": 0.79893558552681,
+    "macro_f1": 0.7917428684835375,
+    "per_class_metrics": {
+      "images": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "ap_50": 0.0,
+        "ap_75": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "date_of_reciept": {
+        "precision": 0.95,
+        "recall": 0.9827586206896551,
+        "f1_score": 0.9661016949152542,
+        "ap_50": 0.9742637644024431,
+        "ap_75": 0.7632946321935004,
+        "true_positives": 57,
+        "false_positives": 3,
+        "false_negatives": 1
+      },
+      "gstin": {
+        "precision": 0.8823529411764706,
+        "recall": 0.7894736842105263,
+        "f1_score": 0.8333333333333333,
+        "ap_50": 0.8844934995026001,
+        "ap_75": 0.6369412509985437,
+        "true_positives": 45,
+        "false_positives": 6,
+        "false_negatives": 12
+      },
+      "invoice_no": {
+        "precision": 0.9310344827586207,
+        "recall": 0.9310344827586207,
+        "f1_score": 0.9310344827586207,
+        "ap_50": 0.8992148202653699,
+        "ap_75": 0.5115151515087771,
+        "true_positives": 54,
+        "false_positives": 4,
+        "false_negatives": 4
+      },
+      "mobile_no": {
+        "precision": 0.59375,
+        "recall": 0.6666666666666666,
+        "f1_score": 0.628099173553719,
+        "ap_50": 0.6739976027444471,
+        "ap_75": 0.3755746063012074,
+        "true_positives": 38,
+        "false_positives": 26,
+        "false_negatives": 19
+      },
+      "product_table": {
+        "precision": 0.9436619718309859,
+        "recall": 0.9852941176470589,
+        "f1_score": 0.9640287769784172,
+        "ap_50": 0.9090909090894661,
+        "ap_75": 0.9062049062031676,
+        "true_positives": 67,
+        "false_positives": 4,
+        "false_negatives": 1
+      },
+      "store_address": {
+        "precision": 0.873015873015873,
+        "recall": 0.9482758620689655,
+        "f1_score": 0.9090909090909091,
+        "ap_50": 0.9042207792189559,
+        "ap_75": 0.6806981777876868,
+        "true_positives": 55,
+        "false_positives": 8,
+        "false_negatives": 3
+      },
+      "store_name": {
+        "precision": 0.9701492537313433,
+        "recall": 0.9558823529411765,
+        "f1_score": 0.962962962962963,
+        "ap_50": 0.9090909090895105,
+        "ap_75": 0.7965447630492508,
+        "true_positives": 65,
+        "false_positives": 2,
+        "false_negatives": 3
+      },
+      "total_amount": {
+        "precision": 0.9310344827586207,
+        "recall": 0.9310344827586207,
+        "f1_score": 0.9310344827586207,
+        "ap_50": 0.9074074074056687,
+        "ap_75": 0.6829834647719198,
+        "true_positives": 54,
+        "false_positives": 4,
+        "false_negatives": 4
+      }
+    }
+  }
+}
