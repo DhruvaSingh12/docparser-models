@@ -3,9 +3,12 @@ weights
 yolo-v11n/test
 yolo-v11n/train
 yolo-v11n/valid
-yolo11n.pt
 faster-rcnn/test
 faster-rcnn/train
 faster-rcnn/valid
 checkpoints
 *.pth
+*.pt
+__pycache__
+images
+img_predictions
