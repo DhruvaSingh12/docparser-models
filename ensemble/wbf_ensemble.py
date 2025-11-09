@@ -244,7 +244,6 @@ class WBFEnsemble:
 
 
 if __name__ == "__main__":
-    # Test the ensemble
     print("Initializing ensemble model...")
     ensemble = WBFEnsemble(
         device=config.DEVICE,

@@ -19,7 +19,6 @@ class FasterRCNNWrapper:
         print(f"Faster R-CNN loaded on {self.device}")
     
     def _load_model(self, weights_path):
-        """Load Faster R-CNN model with weights"""
         # Create model
         model = fasterrcnn_resnet50_fpn(weights=None)
         
@@ -46,10 +45,8 @@ class FasterRCNNWrapper:
     
     def preprocess(self, image):
         if isinstance(image, np.ndarray):
-            # Convert BGR to RGB
-            image = Image.fromarray(image[:, :, ::-1])
-        
-        # Convert to tensor and normalize
+            rgb_image = image[:, :, ::-1]
+            image = Image.fromarray(rgb_image)
         transform = T.Compose([
             T.ToTensor(),
         ])
